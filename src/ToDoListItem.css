@@ -1,0 +1,33 @@
+.ToDoListItem {
+    display: flex;
+    justify-content: space-between;
+    margin: 4vmin;
+    padding: 2vmin;
+    border: 1vmin solid darkgreen;
+    list-style: none;
+    font-size: 6vmin;
+  }
+
+  .numbering {
+    display: flex;
+    margin: 0 1rem;
+    align-items: center;
+    justify-content: center;
+    width: 5rem;
+    line-height: 5rem;
+    border-radius: 50%;
+    background-color: beige;
+    border: none;
+    color: chocolate;
+  }
+
+  .statusMark {
+    font-weight: bold;
+    border: grey solid 0.2rem;
+    border-radius: 20%;
+    line-height: 5rem;
+    width: 5rem;
+    align-items: center;
+    cursor: pointer;
+    background-color: beige;
+  }
