@@ -1,4 +1,3 @@
-import { useState } from "react";
 import "./ToDoListItem.css";
 
 function ToDoListItem({todo, rowIndex, changeTodoStatus}) {
@@ -18,11 +17,13 @@ function ToDoListItem({todo, rowIndex, changeTodoStatus}) {
         <div className="numbering">
             {rowIndex}
         </div>
+        <span style={{ textDecorationLine: todo.completed ? "line-through" : "none" }}>
             {todo.title}
+        </span>
         <div 
             onClick={changeStatus}
             className="statusMark"
-        style={{ color: todo.completed ? "red" : "green" }}
+            style={{ color: todo.completed ? "red" : "green" }}
         >
             { todo.completed ? "⨉" : "✓" }
         </div>
